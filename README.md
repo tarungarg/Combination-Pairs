@@ -1,5 +1,7 @@
 # Combination::Pairs
 
+THIS GEM NEEDS A LOT OF OPTIMIZATION. PLEASE HELP ME TO IMPROVE IT.
+
 Input: K, N (where 0 < N < ∞, 0 < K < ∞, and K <= N)
 Output: Number of possible equations of K numbers whose sum is N
 
@@ -40,9 +42,11 @@ Or install it yourself as:
 There are basic two varibales n and k
 n should greater than k
 
-params = {:n =>100, :k =>4}
-c = Combination::Pairs::Equation.new(params)
-c.create_equations
+    params = {:n =>100, :k =>4}
+
+    eq = Combination::Pairs::Equation.new(params)
+
+    eq.create_equations
 
 
 ## Contributing
